@@ -1,0 +1,18 @@
+<p>pensioner-detail works!</p>
+<form #pensiondetailsform="ngForm" (ngSubmit)="onSubmit(pensiondetailsform.value)" method="GET" name="pension" id="pension">
+    <label for="pensionerName">Name</label>
+    <input type="text" class="form-control" name="pensionerName" ngModel placeholder="username" required=""/>
+    <label for="pan">Pan</label>
+    <input type="text" class="form-control" name="pan" ngModel placeholder="pan" required=""/>
+    <label for="aadharNumber">Adhaar</label>
+    <input type="text" class="form-control" name="aadharNumber" ngModel placeholder="adhar" required=""/>
+    <label for="pensionerDob">DAte</label>
+    <input type="date" class="form-control" name="pensionerDob" ngModel placeholder="date" required=""/>
+    <label for="pensionType">Pension type</label>
+    <select name="pensionType" id="typeOfPension" ngModel>
+        <option value="Family">Family pension</option>
+        <option value="Self">Self pension</option>
+    </select>
+    <input type="submit" value="Submit"/>
+</form>
+
